@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: white;}
+img {display: block;}
+/* html, body {height: 100%;} */
+
+.centerbox {width: 1300px; height: 100%; margin: 0 auto;}
+
+header {background: #3E4347; position: fixed; top: 0; left: 0; 
+width: 100%; z-index: 1000;}
+header .centerbox {display: flex; justify-content: space-between; 
+align-items: center;}
+
+header h1 {}
+
+header .gnb {display: flex; gap: 140px;}
+header .gnb li {font-size: 19px;}
+header .gnb li a {padding: 20px 0px; display: block;}
+
+
+#visual {width: 100%; height: 100vh; background:url('../images/image\ 472.png') center top; 
+background-size: cover;}
+
+#visual .centerbox {position: relative;}
+#visual .centerbox .textbox {text-align: center; position: absolute; 
+width: 100%; top: 305px; 
+left: 50px; animation: textBox 3s forwards;opacity: 0;}
+
+@keyframes textBox {
+    0% {left: 300px; opacity: 0;}
+    100% {left: -50px; opacity: 1;}
+}
+
+#visual .centerbox .textbox strong {display: block; font-size: 80px; font-weight: 
+normal; color: white; line-height: 1.2;}
+#visual .centerbox .textbox em {display: block; font-size: 40px; font-style: 
+normal; color: white;}
+
+#section_box section {padding: 100px 0;}
+
+#section_box #section1 {background: #FFF; padding-bottom: 100px; width: 100%;}
+
+#section_box .title_box {margin-bottom: 100px; text-align: center;}
+#section_box .title_box h2 {color: #3E4347; font-size: 100px; margin-bottom: 10px;}
+#section_box .title_box p {color: #3E4347; font-size: 40px; height: 1em;}
+
+#section_box .content_box {text-align: center;}
+
+#section1 .content {margin-top: 70px;}
+
+#section1 .content .image_box {display: flex; justify-content: center;
+gap: 80px; margin-top: 50px;} 
+
+
+     
